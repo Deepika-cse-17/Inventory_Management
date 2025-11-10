@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: inventory-management
+    env: java
+    plan: free
+    buildCommand: javac src/com/inventory/*.java
+    startCommand: java -cp src com.inventory.Main
